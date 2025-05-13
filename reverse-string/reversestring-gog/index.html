@@ -13,10 +13,13 @@
 </head>
 
 <body>
-    <input type="text" id="myInput" placeholder="Enter at least 3 characters..." oninput="checkInputLength()">
+    <h1><strong>Reverse Text Tool</strong></h1>
+    
+    <input type="text" id="myInput" placeholder="Enter at least 3 characters..." oninput="handleInput()">
     <button id="reverseButton" onclick="reverseText()">Reverse</button>
 
-    <p>Reversed Text: <span id="outputLabel"></span></p>
+    <p>Reversed Text (Live): <span id="liveOutputLabel"></span></p>
+    <p>Reversed Text (Button Click): <span id="outputLabel"></span></p>
 
     <script src="script.js"></script>
 </body>
