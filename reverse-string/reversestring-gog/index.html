@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reverse String</title>
+    <style>
+        #reverseButton {
+            display: none; /* Hidden by default */
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" id="myInput" placeholder="Enter text...">
-    <button onclick="reverseText()">Reverse</button>
+    <input type="text" id="myInput" placeholder="Enter at least 3 characters..." oninput="checkInputLength()">
+    <button id="reverseButton" onclick="reverseText()">Reverse</button>
 
     <p>Reversed Text: <span id="outputLabel"></span></p>
 
