@@ -8,8 +8,10 @@
 </head>
 
 <body>
-    <input type="text" id="myInput" placeholder="Enter something...">
-    <button onclick="alert('You entered: ' + document.getElementById('myInput').value)">Submit</button>
+    <input type="text" id="myInput" placeholder="Enter text...">
+    <button onclick="reverseText()">Reverse</button>
+
+    <p>Reversed Text: <span id="outputLabel"></span></p>
 
     <script src="script.js"></script>
 </body>
